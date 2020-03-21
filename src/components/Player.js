@@ -3,13 +3,7 @@ import AudioPlayer from "react-modular-audio-player";
 import "./Player.css";
 import play from "../assets/play.png";
 import pause from "../assets/pause.png";
-
-let audioFiles = [
-  {
-    src: "https://archive.org/download/BioHazardRadio/Jour%201%20molles.mp3",
-    title: "first day confinement "
-  }
-];
+import { audioFiles } from "../data/podcastFiles";
 
 let rearrangedPlayer = [
   {
@@ -39,21 +33,28 @@ let rearrangedPlayer = [
 ];
 const Player = () => {
   return (
-    <AudioPlayer
-      audioFiles={audioFiles}
-      rearrange={rearrangedPlayer}
-      iconSize="1.5%"
-      playIcon={play}
-      playHoverIcon={play}
-      pauseIcon={pause}
-      pauseHoverIcon={pause}
-      fontFamily="serif"
-      fontSize="1.5rem"
-      playerWidth="25%"
-      sliderClass="invert-blue-grey"
-    />
+    <>
+      {audioFiles.map(audio => (
+        <AudioPlayer
+          audioFiles={[
+            {
+              src: audio.src,
+              title: audio.title
+            }
+          ]}
+          rearrange={rearrangedPlayer}
+          iconSize="1.5%"
+          playIcon={play}
+          playHoverIcon={play}
+          pauseIcon={pause}
+          pauseHoverIcon={pause}
+          fontFamily="serif"
+          fontSize="1.5rem"
+          playerWidth="25%"
+          sliderClass="invert-blue-grey"
+        />
+      ))}
+    </>
   );
 };
 export default Player;
-
-
