@@ -1,0 +1,9 @@
+.audio-player {
+  background-color: rgb(94, 175, 239, 0.4);
+  margin-left: 3vw;
+  margin-bottom: 3vw;
+  padding:1vw;
+  border: solid 1px;
+  border-radius: 2vw;
+  box-shadow: 1px 1px 5px black; 
+};
