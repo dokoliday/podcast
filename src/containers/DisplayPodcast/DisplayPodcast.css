@@ -1,7 +1,11 @@
-.DisplayPodcast{
-  margin:1rem;
+.DisplayPodcast {
+  margin: 1rem;
 }
-.play{
-  width:40%;
-  height:40%;
+.play {
+  width: 40%;
+  height: 40%;
+}
+.modalTitle {
+  text-align: center;
+  margin:1rem;
 }

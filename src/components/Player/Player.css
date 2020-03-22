@@ -1,8 +1,8 @@
 .audio-player {
-  background-color: rgb(94, 175, 239, 0.4);
+  background-color: rgba(15, 161, 167, 0.4);
   margin: auto;
-  padding: 1vw;
+  padding: 0.5rem;
   border: solid 1px;
   border-radius: 2vw;
-  box-shadow: 1px 1px 5px black;
+  box-shadow: 1px 1px 1px rgba(15, 161, 167, 0.4);
 }
