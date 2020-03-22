@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import Player from '../../components/Player';
-import { Card, Container, Modal, Button } from 'react-bootstrap';
+import { Card, Container, Button } from 'react-bootstrap';
 import './DisplayPodcast.css';
 import play from '../../assets/play.png';
+import ModalAudio from '../../components/ModalAudio';
 
 const DisplayPodcast = ({ image, title, src, resume }) => {
   const [show, setShow] = useState(false);
@@ -10,8 +10,8 @@ const DisplayPodcast = ({ image, title, src, resume }) => {
   const handleShow = () => setShow(true);
 
   return (
-    <Container className='DisplayPodcast'>
-      <Card style={{ width: '18rem' }}>
+    <Container fluid >
+      <Card style={{ width: '18rem' }} className='DisplayPodcast'>
         <Card.Img variant='top' src={image} />
         <Card.Body>
           <Card.Title>{title}</Card.Title>
@@ -21,18 +21,7 @@ const DisplayPodcast = ({ image, title, src, resume }) => {
           </Button>
         </Card.Body>
       </Card>
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Card.Img variant='top' src={image} />
-        </Modal.Header>
-        <Modal.Title className='modalTitle'>{title}</Modal.Title>
-        <Player src={src} />
-        <Modal.Footer>
-          <Button variant='info' onClick={handleClose}>
-            Close
-          </Button>
-        </Modal.Footer>
-      </Modal>
+    <ModalAudio image={image}title={title} src={src} handleClose={handleClose} show={show} />
     </Container>
   );
 };

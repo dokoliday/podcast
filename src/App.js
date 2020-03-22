@@ -3,17 +3,16 @@ import Header from "./components/Header";
 import DisplayPodcast from "./containers/DisplayPodcast";
 import { audioFiles } from "../src/data/podcastFiles";
 import { Container, Row, Col } from "react-bootstrap";
+import Map from "./components/Map";
+import './App.css'
 
 const App = () => {
   return (
-    <Container fluid>
+    <>
+    <Header />
+    <Container fluid className="App">
       <Row>
-        <Col>
-          <Header />
-        </Col>
-      </Row>
-      <Row>
-        <Col>
+        <Col s={1} xl={4}>
           {audioFiles.map(podCast => (
             <DisplayPodcast
               image={podCast.img}
@@ -23,8 +22,12 @@ const App = () => {
             />
           ))}
         </Col>
+        <Col s={1} xl={8}>
+          <Map audioFiles={audioFiles} />
+        </Col>
       </Row>
     </Container>
+    </>
   );
 };
 export default App;

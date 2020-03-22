@@ -10,10 +10,10 @@ let rearrangedPlayer = [
     innerComponents: [
       {
         type: "play",
-        style: { width: "12.5%" }
       },
       { type: "time" },
-      { type: "seek" }
+      { type: "seek" ,
+    }
     ]
   }
 ];
