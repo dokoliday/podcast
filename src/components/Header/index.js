@@ -1,9 +1,16 @@
 import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import './Header.css'
 
-
-const Header =()=>{
+const Header = () => {
   return (
-    <h1>Le Podcast</h1>
-  )
-}
+    <Container fluid>
+      <Row className="Header">
+        <Col >
+          <h1>Le Podcast</h1>
+        </Col>
+      </Row>
+    </Container>
+  );
+};
 export default Header;

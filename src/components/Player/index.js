@@ -9,41 +9,25 @@ let rearrangedPlayer = [
     className: "top",
     innerComponents: [
       {
-        type: "name"
+        type: "play",
+        style: { width: "12.5%" }
       },
-      {
-        type: "time",
-        style: { justifyContent: "flex-end" }
-      }
-    ]
-  },
-  {
-    className: "bottom",
-    innerComponents: [
-      {
-        type: "play"
-      },
+      { type: "time" },
       { type: "seek" }
     ]
   }
 ];
-const Player = ({ title, src }) => {
+const Player = ({ src }) => {
   return (
     <>
       <AudioPlayer
-        audioFiles={[
-          {
-            src,
-            title
-          }
-        ]}
+        audioFiles={[{ src }]}
         rearrange={rearrangedPlayer}
         playIcon={play}
         playHoverIcon={play}
         pauseIcon={pause}
         pauseHoverIcon={pause}
-        fontFamily="serif"
-        sliderClass="invert-blue-grey"
+        sliderClass="slider"
       />
     </>
   );
