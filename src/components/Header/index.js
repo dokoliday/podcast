@@ -7,7 +7,7 @@ const Header = () => {
     <Container fluid>
       <Row className="Header">
         <Col >
-          <h1>Le Podcast</h1>
+          <h1>Alors... comment ça va la?</h1>
         </Col>
       </Row>
     </Container>

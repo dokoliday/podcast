@@ -1,10 +1,11 @@
 export const audioFiles = [
   {
     src: "https://archive.org/download/BioHazardRadio/PILOTE.mp3",
-    title: "first day confinement ",
+    title: "Lancement",
     img: "https://archive.org/download/BioHazardRadio/femme.jpg",
     resume: "this is the resume for the first day confinement etc ....",
-    lat: 48,
-    long: 33
+    long: 3.558591,
+    lat: 46.107801,
+    address: "Molles 03300"
   }
 ];
