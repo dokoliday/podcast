@@ -4,7 +4,7 @@ import "./Player.css";
 import play from "../../assets/play.png";
 import pause from "../../assets/pause.png";
 
-let rearrangedPlayer = [
+const rearrangedPlayer = [
   {
     className: "top",
     innerComponents: [
@@ -12,12 +12,17 @@ let rearrangedPlayer = [
         type: "play",
       },
       { type: "time" },
-      { type: "seek" ,
-    }
+      {
+        type: "seek",
+      }
     ]
   }
 ];
-const Player = ({ src }) => {
+
+interface Props {
+  src: string;
+};
+const Player: React.FC<Props> = ({ src }: Props) => {
   return (
     <>
       <AudioPlayer

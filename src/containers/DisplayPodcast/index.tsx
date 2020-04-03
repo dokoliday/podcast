@@ -4,11 +4,17 @@ import './DisplayPodcast.css';
 import play from '../../assets/play.png';
 import ModalAudio from '../../components/ModalAudio';
 
-const DisplayPodcast = ({ image, title, src, resume }) => {
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+interface Props {
+  image: string;
+  title: string;
+  src: string;
+  resume: string;
+};
 
+const DisplayPodcast: React.FC<Props> = ({ image, title, resume, src }: Props) => {
+  const [show, setShow] = useState(false);
+  const handleClose = (): void => setShow(false);
+  const handleShow = (): void => setShow(true);
   return (
     <Container fluid >
       <Card style={{ width: '18rem' }} className='DisplayPodcast'>
@@ -21,7 +27,7 @@ const DisplayPodcast = ({ image, title, src, resume }) => {
           </Button>
         </Card.Body>
       </Card>
-    <ModalAudio image={image}title={title} src={src} handleClose={handleClose} show={show} />
+      <ModalAudio image={image} title={title} src={src} handleClose={handleClose} show={show} />
     </Container>
   );
 };

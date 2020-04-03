@@ -4,10 +4,22 @@ import { Button } from "react-bootstrap";
 import "./Map.css";
 import ModalAudio from "../ModalAudio";
 
-const Map = ({ audioFiles }) => {
+interface Props {
+  audioFiles: AudioFile[];
+}
+interface AudioFile {
+  title: string;
+  address: string;
+  src: string;
+  img: string;
+
+  lat: number;
+  long: number;
+}
+const Map: React.FC<Props> = ({ audioFiles }: Props) => {
   const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleClose = (): void => setShow(false);
+  const handleShow = (): void => setShow(true);
   return (
     <LeafletMap
       center={[50, 10]}
@@ -21,12 +33,14 @@ const Map = ({ audioFiles }) => {
       animate={true}
     >
       <TileLayer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png" />
-      {audioFiles.map(audio => {
+      {audioFiles.map((audio, key) => {
         return (
-          <Marker position={[audio.lat, audio.long]}>
+          <Marker position={[audio.lat, audio.long]} key={key}>
             <Popup>
               <Button variant="outline-info" onClick={handleShow}>
-              {audio.title}
+                {audio.title}
+                <br />
+                {audio.address}
               </Button>
             </Popup>
 
@@ -40,7 +54,7 @@ const Map = ({ audioFiles }) => {
           </Marker>
         );
       })}
-    </LeafletMap>
+    </LeafletMap >
   );
 };
 
