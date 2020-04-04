@@ -12,7 +12,6 @@ interface AudioFile {
   address: string;
   src: string;
   img: string;
-
   lat: number;
   long: number;
 }
@@ -43,7 +42,6 @@ const Map: React.FC<Props> = ({ audioFiles }: Props) => {
                 {audio.address}
               </Button>
             </Popup>
-
             <ModalAudio
               image={audio.img}
               title={audio.title}

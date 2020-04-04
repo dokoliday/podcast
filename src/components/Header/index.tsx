@@ -7,7 +7,7 @@ const Header: React.FC = () => {
     <Container fluid>
       <Row className="Header">
         <Col >
-          <h1>Comment ça va?</h1>
+          <h1>Et vous... Comment ça va?</h1>
         </Col>
       </Row>
     </Container>

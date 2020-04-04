@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./components/Header";
-import DisplayPodcast from "./containers/DisplayPodcast";
+import DisplayPodcast from "./components/DisplayPodcast";
 import { audioFiles } from "./data/podcastFiles";
 import { Container, Row, Col } from "react-bootstrap";
 import Map from "./components/Map";
@@ -12,9 +12,8 @@ const App: React.FC = () => {
       <Header />
       <Container fluid className="App">
         <Row>
-          <Col xs={1} xl={4}>
+          <Col xs={12} xl={6}>
             {audioFiles.map((podCast, key) => (
-              
               <DisplayPodcast
                 key={key}
                 image={podCast.img}
@@ -24,7 +23,7 @@ const App: React.FC = () => {
               />
             ))}
           </Col>
-          <Col xs={1} xl={8}>
+          <Col xs={12} xl={6}>
             <Map audioFiles={audioFiles} />
           </Col>
         </Row>
