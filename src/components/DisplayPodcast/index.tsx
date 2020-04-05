@@ -18,18 +18,18 @@ const DisplayPodcast: React.FC<Props> = ({ image, title, resume, src }: Props) =
   return (
     <Container fluid >
       <Card style={{ width: '18rem' }} className='DisplayPodcast'>
-        <Card.Img variant='top' src={image} className="poster"/>
+        <Card.Img variant='top' src={image} className="poster" />
         <Card.Body>
           <Card.Title>{title}</Card.Title>
           <Card.Text>{resume}</Card.Text>
-          <Button variant='outline-info' onClick={handleShow}>
+          <Button variant='outline-info' onClick={(): void => handleShow()}>
             <img src={play} alt='play' className='play' />
           </Button>
         </Card.Body>
       </Card>
-      <ModalAudio 
-      image={image} 
-      title={title} src={src} handleClose={handleClose} show={show} />
+      <ModalAudio
+        image={image}
+        title={title} src={src} handleClose={handleClose} show={show} />
     </Container>
   );
 };

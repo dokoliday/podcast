@@ -10,7 +10,6 @@ interface Props {
   handleClose: () => void;
 };
 const ModalAudio: React.FC<Props> = ({ image, title, src, handleClose, show }: Props) => {
-  console.log(image, title, src, handleClose, show )
   return (
     <Modal show={show} onHide={(): void => handleClose()}>
       <Modal.Header closeButton>
