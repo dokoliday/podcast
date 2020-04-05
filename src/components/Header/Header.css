@@ -1,5 +1,9 @@
-/* .Header{
-  background-color: black;
+.Header {
+  background-color: rgb(64, 59, 88);
+}
+.EVCCV {
+  font-family: "Comic Neue", cursive;
   color: white;
+  font-size: 2rem;
   padding: 1rem;
-} */
+}
