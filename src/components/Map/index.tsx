@@ -1,8 +1,7 @@
-import React, { useState } from "react";
-import { Map as LeafletMap, TileLayer, Marker, Popup } from "react-leaflet";
-import { Button } from "react-bootstrap";
+import React from "react";
+import { Map as LeafletMap, TileLayer } from "react-leaflet";
+import Marker from './PodcastMarker'
 import "./Map.css";
-import ModalAudio from "../ModalAudio";
 
 interface Props {
   audioFiles: AudioFile[];
@@ -16,9 +15,7 @@ interface AudioFile {
   long: number;
 }
 const Map: React.FC<Props> = ({ audioFiles }: Props) => {
-  const [show, setShow] = useState(false);
-  const handleClose = (): void => setShow(false);
-  const handleShow = (): void => setShow(true);
+
   return (
     <LeafletMap
       center={[50, 10]}
@@ -34,22 +31,9 @@ const Map: React.FC<Props> = ({ audioFiles }: Props) => {
       <TileLayer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png" />
       {audioFiles.map((audio, key) => {
         return (
-          <Marker position={[audio.lat, audio.long]} key={key}>
-            <Popup>
-              <Button variant="outline-info" onClick={handleShow}>
-                {audio.title}
-                <br />
-                {audio.address}
-              </Button>
-            </Popup>
-            <ModalAudio
-              image={audio.img}
-              title={audio.title}
-              src={audio.src}
-              handleClose={handleClose}
-              show={show}
-            />
-          </Marker>
+          <div key={key}>
+            <Marker title={audio.title} address={audio.address} src={audio.src} img={audio.img} lat={audio.lat} long={audio.long} />
+          </div>
         );
       })}
     </LeafletMap >
