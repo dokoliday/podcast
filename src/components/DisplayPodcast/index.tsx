@@ -19,7 +19,7 @@ const DisplayPodcast: React.FC<Props> = ({ image, title, resume, src, date }: Pr
   return (
     <Container fluid >
       <Card className='displayPodcast'>
-        <Card.Img variant='top' src={image} style={{ height: '27vh' }} />
+        <Card.Img variant='top' src={image} style={{ height: '35vh' }} />
         <Card.Body>
           <Card.Title>{title}</Card.Title>
           <Card.Text >{resume}</Card.Text>
