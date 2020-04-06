@@ -1,0 +1,43 @@
+.home {
+  background-color: rgb(250, 213, 4);
+  background-size: cover;
+  height: 100vh;
+}
+.homePlay {
+  animation: blink 2s linear infinite;
+  margin: 5rem;
+}
+.intro {
+  text-align: center;
+  font-family: "Comic Neue", cursive;
+  margin-top: 4rem;
+}
+.EVCCV {
+  font-family: "Comic Neue", cursive;
+  text-align: center;
+  font-size: 8vh;
+  margin: 8vh;
+  font-weight: bold;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 640px) {
+  .EVCCV {
+    margin: 1vh;
+  }
+  .intro {
+    margin-top: 1rem;
+  }
+  .homePlay {
+    margin: 2rem;
+  }
+}
