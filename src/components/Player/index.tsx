@@ -1,6 +1,7 @@
 import React from "react";
-import AudioPlayer from "react-modular-audio-player";
-import "./Player.css";
+import AudioPlayer from 'react-h5-audio-player';
+import 'react-h5-audio-player/lib/styles.css';
+import "./player.css";
 import play from "../../assets/play.png";
 import pause from "../../assets/pause.png";
 
@@ -26,13 +27,9 @@ const Player: React.FC<Props> = ({ src }: Props) => {
   return (
     <>
       <AudioPlayer
-        audioFiles={[{ src }]}
-        rearrange={rearrangedPlayer}
-        playIcon={play}
-        playHoverIcon={play}
-        pauseIcon={pause}
-        pauseHoverIcon={pause}
-        sliderClass="slider"
+        className="audio-player"
+        autoPlay
+        src={src}
       />
     </>
   );
