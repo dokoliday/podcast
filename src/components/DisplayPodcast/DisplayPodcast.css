@@ -1,20 +1,21 @@
-/* .DisplayPodcast {
-  margin: 1rem;
+.displayPodcast {
+  margin-left: auto;
+  margin-right: auto;
+  margin: 1vh;
+  width:19vw;
 }
-.poster {
-  height: 17rem;
-  width: 17rem;
-}
-.play {
-  width: 40%;
-  height: 40%;
-}
-.modalTitle {
-  text-align: center;
-  margin: 1rem;
-}
-@media screen and (max-width: 1280px) {
-  .DisplayPodcast {
-    width: 85% !important;
+
+@media screen and (max-width: 1024px) {
+  .displayPodcast {
+    margin:auto;
+    margin-bottom: 2vh;
+    width: 50vw;
   }
-} */
+}
+@media screen and (max-width: 500px) {
+  .displayPodcast {
+    margin:auto;
+    margin-bottom: 2vh;
+    width: 65vw;
+  }
+}

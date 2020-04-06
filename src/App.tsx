@@ -1,15 +1,15 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Header from "./components/Header";
 import Home from "./components/Home"
+import Podcast from "./components/Podcast"
 import './App.css'
 
 const App: React.FC = () => {
   return (
     <>
-      <Header />
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route path="/podcast" component={Podcast} />
       </Switch>
     </>
   );

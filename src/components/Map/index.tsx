@@ -18,7 +18,7 @@ const Map: React.FC<Props> = ({ audioFiles }: Props) => {
 
   return (
     <LeafletMap
-      center={[50, 10]}
+      center={[35, -20]}
       zoom={3}
       maxZoom={10}
       attributionControl={true}
