@@ -1,23 +1,23 @@
 .leaflet-container {
-  margin: 1rem;
-  height: 70vh;
-  width: 50vw;
-  border-radius: 20%
-};
-/* .play {
+  height: 80vh;
+  width: 90vw;
+  border-radius: 0%;
+  margin: auto;
+}
+.play {
   width: 40%;
   height: 40%;
 }
-
-@media screen and (max-width: 1280px){
+@media screen and (min-width: 1280px) {
   .leaflet-container {
-    height: 80vh;
-    width: 90vw;
-    border-radius: 0%;
-    margin: auto;
-  };
+    position: fixed !important;
+    margin: 1rem;
+    height: 70vh;
+    width: 50vw;
+    border-radius: 20%;
+  }
   .play {
     width: 40%;
     height: 40%;
   }
-} */
+}

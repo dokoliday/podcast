@@ -1,6 +1,6 @@
-import React from "react";
-import Player from "../Player";
-import { Card, Modal, Button } from "react-bootstrap";
+import React from 'react';
+import Player from '../Player';
+import { Card, Modal, Button } from 'react-bootstrap';
 
 interface Props {
   image: string;
@@ -13,12 +13,12 @@ const ModalAudio: React.FC<Props> = ({ image, title, src, handleClose, show }: P
   return (
     <Modal show={show} onHide={(): void => handleClose()}>
       <Modal.Header closeButton>
-        <Card.Img variant="top" src={image} />
+        <Card.Img variant='top' src={image} />
       </Modal.Header>
-      <Modal.Title className="modalTitle">{title}</Modal.Title>
+      <Modal.Title className='modalTitle' style={{ textAlign: 'center' }}>{title}</Modal.Title>
       <Player src={src} />
       <Modal.Footer>
-        <Button variant="info" onClick={(): void => handleClose()}>
+        <Button variant='info' onClick={(): void => handleClose()}>
           Close
         </Button>
       </Modal.Footer>

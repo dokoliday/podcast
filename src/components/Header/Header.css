@@ -1,9 +1,11 @@
-.Header {
-  background-color: rgb(64, 59, 88);
+.header {
+  background-color: rgb(250, 213, 4);
+  margin-bottom: 3rem;
 }
-.EVCCV {
+.headerContent {
   font-family: "Comic Neue", cursive;
-  color: white;
+  color: black;
   font-size: 2rem;
   padding: 1rem;
+  text-align: center;
 }

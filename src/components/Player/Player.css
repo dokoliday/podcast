@@ -1,8 +1,22 @@
-/* .audio-player {
-  background-color: rgba(15, 161, 167, 0.4);
-  margin: auto;
+.audio-player {
+  background-color: rgb(250, 213, 4);
+  margin-bottom: 1vh;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0.5rem;
   border: solid 1px;
   border-radius: 2vw;
   box-shadow: 1px 1px 1px rgba(15, 161, 167, 0.4);
-} */
+  width: 15rem;
+}
+.player-img {
+  height: 3em !important;
+}
+@media screen and (max-width: 640px) {
+  .audio-player {
+    width: 15rem !important;
+  }
+  .player-img {
+    height: 3em !important;
+  }
+}
