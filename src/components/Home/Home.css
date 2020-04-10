@@ -33,11 +33,18 @@
 @media screen and (max-width: 1000px) {
   .EVCCV {
     margin: 1vh;
+    font-size: 6vw;
   }
   .intro {
     margin-top: 1rem;
   }
   .homePlay {
     margin: 2rem;
+  }
+}
+@media screen and (max-width: 568px) {
+  .home{
+    height: 120vh;
+
   }
 }

@@ -11,7 +11,7 @@ const Header: React.FC = () => {
     <Container fluid>
       <Row className="header">
         <Col >
-          <h1 className="headerContent">Et v{renderLogo()}us... Comment ça va?</h1>
+          <h1 className="headerContent">C{renderLogo()}mment ça va?</h1>
         </Col>
       </Row>
     </Container>

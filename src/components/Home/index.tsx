@@ -13,17 +13,16 @@ const Home: React.FC = () => {
     <Container fluid className="home">
       <Row>
         <Col xs={12}>
-          <h1 className="EVCCV">Et v{renderLogo()}us... Comment ça va?</h1>
+          <h1 className="EVCCV">C{renderLogo()}mment ça va?</h1>
         </Col>
       </Row>
       <Col xs={12} className="intro">
-      <h3>Un podcast le confinage blablablabla</h3>
-      <Link to="/podcast" className="blink">
-        <img src={play} className="homePlay" />
-      </Link>
+        <p>&quot;Comment ça va ?&quot;, le podcast qui prend de tes nouvelles, qui brise un peu la solitude, essaye de te déconfiner et de t’emmener voir et écouter ailleurs.Chez le voisin, la voisine et chez ceux que tu n’connais pas.`</p>
+        <Link to="/podcast" className="blink">
+          <img src={play} className="homePlay" />
+        </Link>
       </Col>
     </Container>
-
   )
 }
 export default Home;
