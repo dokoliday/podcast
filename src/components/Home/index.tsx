@@ -16,8 +16,8 @@ const Home: React.FC = () => {
           <h1 className="EVCCV">C{renderLogo()}mment ça va?</h1>
         </Col>
       </Row>
-      <Col xs={12} className="intro">
-        <p>&quot;Comment ça va ?&quot;, le podcast qui prend de tes nouvelles, qui brise un peu la solitude, essaye de te déconfiner et de t’emmener voir et écouter ailleurs.Chez le voisin, la voisine et chez ceux que tu n’connais pas.`</p>
+      <Col xs={12} md={{ span: 6, offset: 3}} className="intro">
+        <p>&quot;Comment ça va ?&quot;, le podcast qui prend de tes nouvelles, qui brise un peu la solitude, essaye de te déconfiner et de t’emmener voir et écouter ailleurs. Chez le voisin, la voisine et chez ceux que tu n’connais pas.</p>
         <Link to="/podcast" className="blink">
           <img src={play} className="homePlay" />
         </Link>
