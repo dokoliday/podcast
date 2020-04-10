@@ -9,11 +9,13 @@
 }
 .intro {
   text-align: center;
-  font-family: "Comic Neue", cursive;
+  font-family: "Roboto Condensed", sans-serif;
   margin-top: 4rem;
+  font-weight: bold;
+  font-size: 2vw;
 }
 .EVCCV {
-  font-family: "Comic Neue", cursive;
+  font-family: "Roboto Condensed", sans-serif;
   text-align: center;
   font-size: 8vh;
   margin: 8vh;
@@ -30,21 +32,34 @@
     opacity: 1;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) and (min-width: 800px) {
   .EVCCV {
     margin: 1vh;
-    font-size: 6vw;
+    font-size: 8vw;
   }
   .intro {
     margin-top: 1rem;
+    font-size: 2vw;
   }
   .homePlay {
     margin: 2rem;
   }
 }
-@media screen and (max-width: 568px) {
-  .home{
-    height: 120vh;
-
+@media screen and (max-width: 800px) {
+  .EVCCV {
+    margin: 1vh;
+    font-size: 8vw;
+  }
+  .intro {
+    margin-top: 1rem;
+    font-size: 4vw;
+  }
+  .homePlay {
+    margin: 2rem;
+  }
+}
+@media screen and (max-width: 815px) and (min-width: 500px) {
+  .home {
+    height: 140vh;
   }
 }
