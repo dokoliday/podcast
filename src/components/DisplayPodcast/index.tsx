@@ -12,7 +12,7 @@ interface Props {
   date: string;
 };
 
-const DisplayPodcast: React.FC<Props> = ({ image, title, resume, src, date }: Props) => {
+const DisplayPodcast: React.FC<Props> = ({ image, title, resume, src }: Props) => {
   const [show, setShow] = useState(false);
   const handleClose = (): void => setShow(false);
   const handleShow = (): void => setShow(true);
@@ -25,7 +25,6 @@ const DisplayPodcast: React.FC<Props> = ({ image, title, resume, src, date }: Pr
           <Card.Text >{resume}</Card.Text>
           <Button variant='outline-info' onClick={(): void => handleShow()}>
             <img src={play} alt='play' className='play' style={{ width: '3rem' }} />
-            <p >{date}</p>
           </Button>
         </Card.Body>
       </Card>

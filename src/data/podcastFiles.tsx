@@ -16,7 +16,7 @@ export const audioFiles = [
     resume: `Thomas, 19 ans, étudiant à Paris, nous raconte son confinement chez ses parents dans le sud.`,
     long: 7.250755,
     lat: 43.717687,
-    address: "Nices",
+    address: "Nice",
     date: "20/04/2020"
   },
   {
@@ -36,7 +36,7 @@ export const audioFiles = [
     resume: `Bruno, 59 ans,  médecin généraliste nous livre un peu de son quotidien et ce que lui inspire l'épreuve du coronavius.`,
     long: 3.101394,
     lat: 45.785846,
-    address: "Clermont-Ferrant",
+    address: "Clermont-Ferrand",
     date: "20/04/2020"
   },
   {
@@ -51,7 +51,7 @@ export const audioFiles = [
   },
   {
     src: "https://archive.org/download/BioHazardRadio/PODCAST%20NICO.mp3",
-    title: "Nicolas",
+    title: "Nicola",
     img: "https://archive.org/download/BioHazardRadio/musique.jpeg",
     resume: `Nicola, 29 ans, nous parle depuis la Lombardie.`,
     long: 9.680795,
