@@ -40,7 +40,7 @@ export const audioFiles = [
     date: "20/04/2020"
   },
   {
-    src: "https://archive.org/download/BioHazardRadio/PODCAST%20OULEYE.mp3",
+    src: "https://archive.org/download/BioHazardRadio/4%20-%20PODCAST%20OULEYE.mp3",
     title: "Ouleye",
     img: "https://archive.org/download/BioHazardRadio/senegal.jpg",
     resume: `Ouleye, 29 ans, nous raconte son confinement au Sénégal.`,
@@ -50,7 +50,7 @@ export const audioFiles = [
     date: "20/04/2020"
   },
   {
-    src: "https://archive.org/download/BioHazardRadio/PODCAST%20NICO.mp3",
+    src: "https://archive.org/download/BioHazardRadio/5%20-%20PODCAST%20NICO.mp3",
     title: "Nicola",
     img: "https://archive.org/download/BioHazardRadio/musique.jpeg",
     resume: `Nicola, 29 ans, nous parle depuis la Lombardie.`,
